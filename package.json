@@ -11,10 +11,14 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "heroku-postbuild": "ng build --prod"
+    "postinstall": "ng build --aot --prod"
+    
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "^13.3.0",
+    "@angular/compiler-cli": "~13.3.0",
+    "typescript": "^4.6.3",
     "@angular/animations": "~13.3.0",
     "@angular/cdk": "^13.3.9",
     "@angular/common": "~13.3.0",
@@ -57,5 +61,6 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "^4.6.3"
-  }
+  },
+  "engine": { "node": "v16.13.0", "npm": "8.5.5" }
 }
