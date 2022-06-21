@@ -1,0 +1,6 @@
+{
+    "/": {
+        "target": "https://hki-springboot.herokuapp.com",
+        "secure": false
+    }
+}
